@@ -348,6 +348,22 @@ github.com/nezianyatony-cloud
 © 2026 Nezianya Cloud Portfolio | Built with AWS, Git & GitHub
 </p>
 
+<section class="card">
+    <h2>Portfolio Statistics</h2>
+    <p>Total Visitors: <span id="visitor-count">Loading...</span></p>
+</section>
+
+<script>
+fetch('https://0lcre1dcc3.execute-api.us-east-1.amazonaws.com/prod/visitors')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('visitor-count').innerText = data.views;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('visitor-count').innerText = 'Unavailable';
+    });
+</script>
 </footer>
 
 </body>
