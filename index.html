@@ -6,59 +6,52 @@
 <title>Nezianya Cloud Portfolio</title>
 
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;}
 body{
-    font-family: 'Segoe UI', sans-serif;
-    background:#f4f7fb;
-    color:#333;
+    font-family:'Segoe UI',sans-serif;
+    background:#0f172a;
+    color:#e5e7eb;
+    line-height:1.6;
 }
-
 header{
-    background:linear-gradient(135deg,#0b1f3a,#1d4ed8);
-    color:white;
-    padding:80px 20px;
+    background:linear-gradient(135deg,#0b1f3a,#2563eb);
+    padding:90px 20px;
     text-align:center;
 }
-
-header h1{
-    font-size:3.5rem;
-    margin-bottom:15px;
+header h1{font-size:3.5rem;margin-bottom:15px;}
+header p{font-size:1.3rem;opacity:.95;}
+.hero-buttons{margin-top:30px;}
+.btn{
+    display:inline-block;
+    padding:12px 24px;
+    margin:8px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    background:#ffffff;
+    color:#0b1f3a;
 }
-
-header p{
-    font-size:1.3rem;
-    opacity:0.95;
-}
+.btn:hover{transform:translateY(-2px);}
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     padding:50px 20px;
 }
-
-section{
-    margin-bottom:60px;
-}
+section{margin-bottom:60px;}
 
 .section-title{
     font-size:2rem;
-    color:#0b1f3a;
     margin-bottom:25px;
-    border-left:6px solid #2563eb;
+    border-left:5px solid #3b82f6;
     padding-left:15px;
 }
 
-.card{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+.card,.project,.skill,.counter-card{
+    background:#1e293b;
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
 }
 
 .skills{
@@ -66,20 +59,7 @@ section{
     grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
     gap:15px;
 }
-
-.skill{
-    background:white;
-    text-align:center;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.skill:hover{
-    transform:translateY(-5px);
-}
+.skill{text-align:center;font-weight:bold;}
 
 .projects{
     display:grid;
@@ -87,23 +67,27 @@ section{
     gap:20px;
 }
 
-.project{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+.project h3{
+    color:#60a5fa;
+    margin-bottom:10px;
 }
 
-.project h3{
-    color:#2563eb;
-    margin-bottom:12px;
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.counter-number{
+    font-size:3rem;
+    font-weight:bold;
+    color:#60a5fa;
 }
 
 .contact{
-    background:#0b1f3a;
-    color:white;
-    padding:35px;
-    border-radius:15px;
+    background:#1e293b;
+    border-radius:16px;
+    padding:30px;
 }
 
 .contact a{
@@ -111,259 +95,153 @@ section{
     text-decoration:none;
 }
 
-.contact a:hover{
-    text-decoration:underline;
-}
-
-.github-btn{
-    display:inline-block;
-    margin-top:15px;
-    background:#2563eb;
-    color:white;
-    padding:12px 24px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.github-btn:hover{
-    background:#1d4ed8;
-}
-
-.counter{
-    background:#e0f2fe;
-    border-left:5px solid #0284c7;
-    padding:20px;
-    margin-top:20px;
-    border-radius:10px;
-}
-
 footer{
     text-align:center;
-    background:#0b1f3a;
-    color:white;
-    padding:25px;
-    margin-top:50px;
+    padding:30px;
+    background:#020617;
+    margin-top:40px;
 }
 
+@media(max-width:768px){
+header h1{font-size:2.3rem;}
+header p{font-size:1rem;}
+}
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <h1>Nezianya Cloud Portfolio</h1>
-    <p>
-        Cloud Engineer in Training | AWS | Linux | GitHub | Cloud Infrastructure
-    </p>
+<h1>Nezianya Ikechukwu Anthony</h1>
+<p>Cloud Engineer | AWS | Linux | Serverless Applications</p>
+
+<div class="hero-buttons">
+<a href="#" class="btn">Download Resume</a>
+<a href="https://github.com/nezianyatony-cloud" target="_blank" class="btn">GitHub</a>
+<a href="https://www.linkedin.com/in/ikechukwu-nezianya-76653b16a" target="_blank" class="btn">LinkedIn</a>
+</div>
 </header>
 
 <div class="container">
 
 <section>
-
 <h2 class="section-title">About Me</h2>
-
 <div class="card">
-
 <p>
-
-Hello, I'm <strong>Nezianya Ikechukwu Anthony</strong>.
-
-I am an aspiring Cloud Engineer currently building practical experience with AWS cloud services, Linux administration, networking, Git, GitHub, and cloud-native technologies.
-
-My goal is to transition into a professional cloud engineering role where I can design, deploy, and manage scalable cloud infrastructure.
-
+I am an aspiring Cloud Engineer building hands-on experience with AWS cloud services,
+Linux administration, networking, Git, GitHub and serverless technologies.
+This portfolio showcases projects completed while developing practical skills in
+cloud infrastructure, automation and modern cloud-native architecture.
 </p>
-
 </div>
-
 </section>
 
 <section>
-
 <h2 class="section-title">Technical Skills</h2>
-
 <div class="skills">
-
 <div class="skill">Amazon EC2</div>
 <div class="skill">Amazon S3</div>
 <div class="skill">CloudFront</div>
+<div class="skill">AWS Lambda</div>
+<div class="skill">API Gateway</div>
+<div class="skill">DynamoDB</div>
+<div class="skill">IAM</div>
 <div class="skill">Linux</div>
 <div class="skill">SSH</div>
-<div class="skill">Apache Web Server</div>
+<div class="skill">Apache</div>
 <div class="skill">Git</div>
 <div class="skill">GitHub</div>
-<div class="skill">HTML & CSS</div>
-<div class="skill">IAM</div>
-
 </div>
-
 </section>
 
 <section>
+<h2 class="section-title">Portfolio Statistics</h2>
 
+<div class="stats-grid">
+<div class="counter-card">
+<h3>Live Visitor Count</h3>
+<div class="counter-number" id="visitor-count">Loading...</div>
+<p>Powered by API Gateway, Lambda and DynamoDB</p>
+</div>
+
+<div class="counter-card">
+<h3>Cloud Projects</h3>
+<div class="counter-number">5+</div>
+<p>Hands-on AWS projects completed</p>
+</div>
+</div>
+</section>
+
+<section>
 <h2 class="section-title">Cloud Projects</h2>
 
 <div class="projects">
 
 <div class="project">
-<h3>AWS EC2 Web Hosting</h3>
-<p>
-Launched and configured an EC2 Linux server, connected via SSH,
-installed Apache, and hosted a portfolio website.
-</p>
+<h3>🚀 AWS EC2 Web Hosting</h3>
+<p>Deployed and managed an Apache web server on an EC2 Linux instance using SSH and Security Groups.</p>
 </div>
 
 <div class="project">
-<h3>Amazon S3 Static Website</h3>
-<p>
-Configured S3 bucket hosting, uploaded website assets,
-managed bucket permissions and website settings.
-</p>
+<h3>📦 Amazon S3 Static Website Hosting</h3>
+<p>Hosted a static portfolio website using Amazon S3 with bucket policies and website hosting configuration.</p>
 </div>
 
 <div class="project">
-<h3>CloudFront CDN Deployment</h3>
-<p>
-Connected CloudFront to S3 to provide global content delivery,
-HTTPS support, and low-latency website access.
-</p>
+<h3>🌍 CloudFront CDN Deployment</h3>
+<p>Configured CloudFront to provide HTTPS, caching and low-latency global delivery.</p>
 </div>
 
 <div class="project">
-<h3>Git & GitHub Portfolio Deployment</h3>
-<p>
-Version-controlled website files using Git and synchronized
-the project with GitHub for source control.
-</p>
+<h3>💻 Git & GitHub Integration</h3>
+<p>Version-controlled website files and synchronized changes with GitHub repositories.</p>
 </div>
 
 <div class="project">
-<h3>Cloud Resume Challenge</h3>
-<p>
-Currently implementing a visitor counter using API Gateway,
-AWS Lambda, and DynamoDB.
-</p>
+<h3>⚡ Serverless Visitor Counter</h3>
+<p>Built using API Gateway, Lambda and DynamoDB to display a live visitor count on this portfolio.</p>
+</div>
+
+<div class="project">
+<h3>🏆 Cloud Resume Challenge</h3>
+<p>Integrated AWS services into a complete cloud-native portfolio solution.</p>
 </div>
 
 </div>
-
 </section>
 
 <section>
-
 <h2 class="section-title">Education</h2>
-
 <div class="card">
-
 <h3>B.A. Accounting</h3>
-
-<p>
-Wisconsin International University College,
-Accra, Ghana
-</p>
-
+<p>Wisconsin International University College, Accra, Ghana</p>
 </div>
-
 </section>
 
 <section>
-
-<h2 class="section-title">GitHub Repository</h2>
-
-<div class="card">
-
-<p>
-View the source code for this portfolio project on GitHub.
-</p>
-
-<a
-class="github-btn"
-href="https://github.com/nezianyatony-cloud/nezianya-cloud-portfolio"
-target="_blank">
-
-View GitHub Repository
-
-</a>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Visitor Counter</h2>
-
-<div class="counter">
-
-<h3>Coming Soon 🚀</h3>
-
-<p>
-This section will be powered by AWS Lambda,
-API Gateway, and DynamoDB as part of the
-Cloud Resume Challenge.
-</p>
-
-</div>
-
-</section>
-
-<section>
-
 <h2 class="section-title">Contact</h2>
-
 <div class="contact">
-
-<p><strong>Email:</strong> nezianyatony@gmail.com</p>
-
-<br>
-
-<p>
-<strong>LinkedIn:</strong>
-<a href="https://www.linkedin.com/in/ikechukwu-nezianya-76653b16a" target="_blank">
-View LinkedIn Profile
-</a>
-</p>
-
-<br>
-
-<p>
-<strong>GitHub:</strong>
-<a href="https://github.com/nezianyatony-cloud" target="_blank">
-github.com/nezianyatony-cloud
-</a>
-</p>
-
+<p><strong>Email:</strong> nezianyatony@gmail.com</p><br>
+<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ikechukwu-nezianya-76653b16a" target="_blank">View Profile</a></p><br>
+<p><strong>GitHub:</strong> <a href="https://github.com/nezianyatony-cloud" target="_blank">github.com/nezianyatony-cloud</a></p>
 </div>
-
 </section>
 
 </div>
-
-<section class="card">
-    <h2>Portfolio Statistics</h2>
-    <p>
-        Total Visitors:
-        <span id="visitor-count">Loading...</span>
-    </p>
-</section>
 
 <footer>
-    <p>© 2026 Nezianya Cloud Portfolio | Built with AWS, Git & GitHub</p>
+<p>© 2026 Nezianya Cloud Portfolio | Built with AWS, GitHub, Lambda, API Gateway & DynamoDB</p>
 </footer>
 
 <script>
 fetch('https://0lcre1dcc3.execute-api.us-east-1.amazonaws.com/prod/visitors')
-    .then(response => response.json())
-    .then(data => {
-        document.getElementById('visitor-count').innerText = data.views;
-    })
-    .catch(error => {
-        console.error(error);
-        document.getElementById('visitor-count').innerText = 'Unavailable';
-    });
+.then(response => response.json())
+.then(data => {
+document.getElementById('visitor-count').innerText = data.views;
+})
+.catch(error => {
+document.getElementById('visitor-count').innerText = 'Unavailable';
+});
 </script>
 
 </body>
