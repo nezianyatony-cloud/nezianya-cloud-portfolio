@@ -1,124 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nezianya Cloud Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#f4f7fb;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0b1f3a,#1d4ed8);
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:3.5rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.3rem;
+    opacity:0.95;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+section{
+    margin-bottom:60px;
+}
+
+.section-title{
+    font-size:2rem;
+    color:#0b1f3a;
+    margin-bottom:25px;
+    border-left:6px solid #2563eb;
+    padding-left:15px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+.skill{
+    background:white;
+    text-align:center;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.project h3{
+    color:#2563eb;
+    margin-bottom:12px;
+}
+
+.contact{
+    background:#0b1f3a;
+    color:white;
+    padding:35px;
+    border-radius:15px;
+}
+
+.contact a{
+    color:#60a5fa;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+.github-btn{
+    display:inline-block;
+    margin-top:15px;
+    background:#2563eb;
+    color:white;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.github-btn:hover{
+    background:#1d4ed8;
+}
+
+.counter{
+    background:#e0f2fe;
+    border-left:5px solid #0284c7;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    background:#0b1f3a;
+    color:white;
+    padding:25px;
+    margin-top:50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
 <header>
     <h1>Nezianya Cloud Portfolio</h1>
-    <p>Cloud Engineer in Training | AWS | Linux | Cloud Infrastructure | Git & GitHub</p>
+    <p>
+        Cloud Engineer in Training | AWS | Linux | GitHub | Cloud Infrastructure
+    </p>
 </header>
 
 <div class="container">
 
 <section>
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-            Hello, I'm <strong>Nezianya Ikechukwu Anthony</strong>, an aspiring Cloud Engineer with a background in customer service, problem-solving, and technology. I am currently building hands-on experience with AWS cloud services, Linux administration, networking, Git, and cloud-native architectures. My goal is to transition into a professional cloud engineering role and contribute to scalable, secure, and reliable cloud solutions.
-        </p>
-    </div>
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+
+<p>
+
+Hello, I'm <strong>Nezianya Ikechukwu Anthony</strong>.
+
+I am an aspiring Cloud Engineer currently building practical experience with AWS cloud services, Linux administration, networking, Git, GitHub, and cloud-native technologies.
+
+My goal is to transition into a professional cloud engineering role where I can design, deploy, and manage scalable cloud infrastructure.
+
+</p>
+
+</div>
+
 </section>
 
 <section>
-    <h2>Technical Skills</h2>
 
-```
+<h2 class="section-title">Technical Skills</h2>
+
 <div class="skills">
-    <div class="skill-box">Amazon EC2</div>
-    <div class="skill-box">Amazon S3</div>
-    <div class="skill-box">CloudFront</div>
-    <div class="skill-box">Linux</div>
-    <div class="skill-box">SSH</div>
-    <div class="skill-box">Apache (httpd)</div>
-    <div class="skill-box">Git</div>
-    <div class="skill-box">GitHub</div>
-    <div class="skill-box">HTML & CSS</div>
-    <div class="skill-box">IAM Fundamentals</div>
+
+<div class="skill">Amazon EC2</div>
+<div class="skill">Amazon S3</div>
+<div class="skill">CloudFront</div>
+<div class="skill">Linux</div>
+<div class="skill">SSH</div>
+<div class="skill">Apache Web Server</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">HTML & CSS</div>
+<div class="skill">IAM</div>
+
 </div>
-```
 
 </section>
 
 <section>
-    <h2>Cloud Projects</h2>
 
-```
+<h2 class="section-title">Cloud Projects</h2>
+
+<div class="projects">
+
 <div class="project">
-    <h3>AWS EC2 Web Hosting</h3>
-    <p>
-        Launched an Amazon EC2 Linux instance, configured Security Groups, connected securely using SSH, installed and configured Apache web server, and deployed a personal website.
-    </p>
+<h3>AWS EC2 Web Hosting</h3>
+<p>
+Launched and configured an EC2 Linux server, connected via SSH,
+installed Apache, and hosted a portfolio website.
+</p>
 </div>
 
 <div class="project">
-    <h3>AWS S3 Static Website Hosting</h3>
-    <p>
-        Hosted a static website using Amazon S3, configured bucket policies, enabled website hosting, managed public access settings, and deployed website content.
-    </p>
+<h3>Amazon S3 Static Website</h3>
+<p>
+Configured S3 bucket hosting, uploaded website assets,
+managed bucket permissions and website settings.
+</p>
 </div>
 
 <div class="project">
-    <h3>CloudFront Content Delivery Network</h3>
-    <p>
-        Configured Amazon CloudFront to deliver website content globally using HTTPS, caching, and low-latency content delivery.
-    </p>
+<h3>CloudFront CDN Deployment</h3>
+<p>
+Connected CloudFront to S3 to provide global content delivery,
+HTTPS support, and low-latency website access.
+</p>
 </div>
 
 <div class="project">
-    <h3>GitHub Version Control</h3>
-    <p>
-        Created and managed a GitHub repository for this portfolio project, implemented version control with Git, and synchronized local code changes with GitHub.
-    </p>
+<h3>Git & GitHub Portfolio Deployment</h3>
+<p>
+Version-controlled website files using Git and synchronized
+the project with GitHub for source control.
+</p>
 </div>
 
 <div class="project">
-    <h3>Cloud Resume Challenge (In Progress)</h3>
-    <p>
-        Currently implementing a serverless visitor counter using Amazon DynamoDB, AWS Lambda, and Amazon API Gateway as part of the Cloud Resume Challenge.
-    </p>
+<h3>Cloud Resume Challenge</h3>
+<p>
+Currently implementing a visitor counter using API Gateway,
+AWS Lambda, and DynamoDB.
+</p>
 </div>
-```
+
+</div>
 
 </section>
 
 <section>
-    <h2>Education</h2>
 
-```
+<h2 class="section-title">Education</h2>
+
 <div class="card">
-    <strong>B.A. Accounting</strong><br>
-    Wisconsin International University College, Accra, Ghana
+
+<h3>B.A. Accounting</h3>
+
+<p>
+Wisconsin International University College,
+Accra, Ghana
+</p>
+
 </div>
-```
 
 </section>
 
 <section>
-    <h2>Contact</h2>
 
-```
+<h2 class="section-title">GitHub Repository</h2>
+
 <div class="card">
-    <p>Email: <a href="mailto:nezianyatony@gmail.com">nezianyatony@gmail.com</a></p>
 
-    <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/ikechukwu-nezianya-76653b16a" target="_blank">
-            View LinkedIn Profile
-        </a>
-    </p>
+<p>
+View the source code for this portfolio project on GitHub.
+</p>
 
-    <p>
-        GitHub:
-        <a href="https://github.com/nezianyatony-cloud/nezianya-cloud-portfolio" target="_blank">
-            View Portfolio Repository
-        </a>
-    </p>
+<a
+class="github-btn"
+href="https://github.com/nezianyatony-cloud/nezianya-cloud-portfolio"
+target="_blank">
 
-    <p>
-        Visitor Counter: Coming Soon 🚀
-    </p>
+View GitHub Repository
+
+</a>
+
 </div>
-```
+
+</section>
+
+<section>
+
+<h2 class="section-title">Visitor Counter</h2>
+
+<div class="counter">
+
+<h3>Coming Soon 🚀</h3>
+
+<p>
+This section will be powered by AWS Lambda,
+API Gateway, and DynamoDB as part of the
+Cloud Resume Challenge.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p><strong>Email:</strong> nezianyatony@gmail.com</p>
+
+<br>
+
+<p>
+<strong>LinkedIn:</strong>
+<a href="https://www.linkedin.com/in/ikechukwu-nezianya-76653b16a" target="_blank">
+View LinkedIn Profile
+</a>
+</p>
+
+<br>
+
+<p>
+<strong>GitHub:</strong>
+<a href="https://github.com/nezianyatony-cloud" target="_blank">
+github.com/nezianyatony-cloud
+</a>
+</p>
+
+</div>
 
 </section>
 
 </div>
 
 <footer>
-    <p>© 2026 Nezianya Cloud Portfolio | Built with AWS, Git, and GitHub</p>
+
+<p>
+© 2026 Nezianya Cloud Portfolio | Built with AWS, Git & GitHub
+</p>
+
 </footer>
+
+</body>
+</html>
